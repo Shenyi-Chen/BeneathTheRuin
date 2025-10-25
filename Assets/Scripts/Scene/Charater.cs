@@ -2,13 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GameManager : MonoBehaviour
+public class Charater : MonoBehaviour
 {
-    public static GameManager I;
-    
+    public static Charater I;
+
     private void Awake()
-    { 
-        I = this; 
+    {
+        I = this;
     }
 
     // Start is called before the first frame update

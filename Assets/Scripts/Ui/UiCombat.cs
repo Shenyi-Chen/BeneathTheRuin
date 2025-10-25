@@ -2,8 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class UiMission : MonoBehaviour
+public class UiCombat : MonoBehaviour
 {
+    public static UiCombat I;
+
+    private void Awake()
+    {
+        I = this;
+    }
+
     // Start is called before the first frame update
     void Start()
     {

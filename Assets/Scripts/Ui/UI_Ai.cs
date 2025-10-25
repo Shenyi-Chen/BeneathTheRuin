@@ -2,15 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GameManager : MonoBehaviour
+public class UI_Ai : MonoBehaviour
 {
-    public static GameManager I;
-    
-    private void Awake()
+    public static UI_Ai I;
+
+    void Awake()
+
     { 
         I = this; 
     }
-
     // Start is called before the first frame update
     void Start()
     {

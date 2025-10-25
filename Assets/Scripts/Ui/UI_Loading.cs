@@ -4,6 +4,13 @@ using UnityEngine;
 
 public class UI_Loading : MonoBehaviour
 {
+    public static UI_Loading I
+
+    private void Awake()
+
+    {
+        I = this;
+    }
     // Start is called before the first frame update
     void Start()
     {

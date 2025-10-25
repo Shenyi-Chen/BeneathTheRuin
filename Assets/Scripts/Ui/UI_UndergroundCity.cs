@@ -2,8 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class UnderGroundCIty : MonoBehaviour
+public class UI_UndergroundCity : MonoBehaviour
 {
+    public static UI_UndergroundCity I;
+
+    private void Awake()
+    {
+        I = this;
+    }
+
     // Start is called before the first frame update
     void Start()
     {
