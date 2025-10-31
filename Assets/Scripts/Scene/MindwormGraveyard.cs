@@ -4,11 +4,19 @@ using UnityEngine;
 
 public class MindwormGraveyard : MonoBehaviour
 {
-    public static MindwormGraveyard I;
+    public GameObject mc;
+
+    public void Init()
+    {
+        Hide();
+    }
+
+    public void Show() { gameObject.SetActive(true); }
+    public void Hide() { gameObject.SetActive(false); }
 
     private void Awake()
     {
-        I = this;
+      
     }
 
     // Start is called before the first frame update

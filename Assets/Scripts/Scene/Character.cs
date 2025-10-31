@@ -2,23 +2,28 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class UndergroundCity : MonoBehaviour
+public class Character : MonoBehaviour
 {
-    public GameObject npc;
-    public GameObject dialogue_Symbol;
+    public GameObject mc_Stand;
+    public GameObject mc_Hurt;
+    public GameObject mc_Skill;
+    public GameObject mc_Attack;
+    public GameObject mc_full;
+    
 
     public void Init()
     {
         Hide();
     }
-
+    
     public void Show() { gameObject.SetActive(true); }
     public void Hide() { gameObject.SetActive(false); }
-
+    
     private void Awake()
     {
-        
+
     }
+
 
     // Start is called before the first frame update
     void Start()

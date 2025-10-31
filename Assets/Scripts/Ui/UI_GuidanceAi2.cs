@@ -2,23 +2,25 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
-public class UI_ToolPanel : MonoBehaviour
+public class UI_GuidanceAi2 : MonoBehaviour
 {
-    public GameObject panel_ToolPanel1;
-    public GameObject panel_ToolPanel2;
+    public Image profile_BadAi;
+    public Image panel_GuidanceAi2;
+    public TMP_Text text_BadAi;
 
-    public void Init() 
+    public void Init()
     {
-        Hide();
-    }
 
+       Hide();
+
+    }
+    
     public void Show() { gameObject.SetActive(true); }
     public void Hide() { gameObject.SetActive(false); }
-    private void Awake()
-    {
 
-    }
+    private void Awake() { }
     // Start is called before the first frame update
     void Start()
     {

@@ -4,12 +4,35 @@ using UnityEngine;
 
 public class Combat : MonoBehaviour
 {
-    public static Combat I;
+    public GameObject mc_Stand;
+    public GameObject mc_Hurt;
+    public GameObject mc_Skill;
+    public GameObject mc_Attack;
+    public GameObject mc_full;
+    public GameObject mc_DefenceEffect;
+    public GameObject enemy1;
+    public GameObject enemy1_Attacked;
+    public GameObject enemy2;
+    public GameObject enemy2_Attacked;
+    public GameObject robot;
+    public GameObject robot_Selected;
+    public GameObject eny1_AttackEffect;
+    public GameObject remoteSupportEffect;
 
-    private void Awake()
+  
+    
+    public void Init() 
     {
-        I = this;
+        Hide();
     }
+
+    public void Show() { gameObject.SetActive(true); }
+    public void Hide() { gameObject.SetActive(false); }
+
+
+
+
+
 
     // Start is called before the first frame update
     void Start()

@@ -1,11 +1,19 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
 
-public class UndergroundCity : MonoBehaviour
+public class UI_GuidanceAi : MonoBehaviour
 {
-    public GameObject npc;
-    public GameObject dialogue_Symbol;
+    public Image profile_GoodAi;
+    public Image panel_GuidanceAi;
+    public Image selected_Dialogue;
+    public TMP_Text text_Option1;
+    public TMP_Text text_Option2;
+    public TMP_Text text_Option3;
+    public TMP_Text text_GoodAi;
+
 
     public void Init()
     {
@@ -15,11 +23,7 @@ public class UndergroundCity : MonoBehaviour
     public void Show() { gameObject.SetActive(true); }
     public void Hide() { gameObject.SetActive(false); }
 
-    private void Awake()
-    {
-        
-    }
-
+    private void Awake() { }
     // Start is called before the first frame update
     void Start()
     {
